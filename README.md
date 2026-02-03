@@ -7,6 +7,18 @@ It consists of a centrally hosted server exposing GenAI tools and a client that 
 - **Server**: FastAPI application using `mcp.server.sse`. Exposes Weather, Travel, and Memory tools.
 - **Client**: Python script using `google-generativeai` and `mcp.client.sse`.
 
+## 🛠️ specific Resources Used
+This project relies on several external APIs to function. You will need to obtain API keys for the following services:
+
+1.  **Google Gemini API** (`GOOGLE_API_KEY`): Used as the core reasoning engine for the client.
+    *   [Get API Key](https://aistudio.google.com/)
+2.  **OpenWeatherMap API** (`OPENWEATHER_API_KEY`): Used by the `get_weather` tool.
+    *   [Get API Key](https://openweathermap.org/api)
+3.  **Amadeus for Developers** (`AMADEUS_API_KEY`, `AMADEUS_API_SECRET`): Used by the `search_flights` and `search_hotels` tools.
+    *   [Get API Key](https://developers.amadeus.com/)
+4.  **Pinecone** (`PINECONE_API_KEY`, `PINECONE_INDEX_NAME`): Used by `store_memory` and `retrieve_memory` tools for vector storage.
+    *   [Get API Key](https://www.pinecone.io/)
+
 ## Setup
 1. Copy `.env.example` to `.env` and fill in your API keys.
 2. Install dependencies:
