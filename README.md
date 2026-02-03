@@ -21,7 +21,38 @@ python -m server.app
 ```
 (Or use `uvicorn server.app:app --reload`)
 
+
 ### 2. Run the Client
 ```bash
 python -m client.client
+```
+
+## 🚀 Demo
+To understand how the tools work without running the full server-client setup, you can run the standalone demo script:
+
+```bash
+python demo_flow.py
+```
+
+### Example Console Output
+Here is what an interaction looks like when running the demo:
+
+```text
+==================================================
+🤖 SIMPLIFIED MCP DEMO
+This script runs the logic locally to explain the flow.
+==================================================
+
+You (type 'quit' to exit): What is the weather in Tokyo?
+
+[Sending to Gemini]: What is the weather in Tokyo?
+
+[⚡ Gemini Decision]: I need to use a tool!
+  > Tool Name: get_weather
+  > Arguments: {'city': 'Tokyo'}
+
+[⚙️ MCP Server]: Running get_weather...
+  > Result: Weather in Tokyo: broken clouds, Temperature: 3.82°C, Humidity: 52%
+
+[💬 Gemini Final Answer]: The weather in Tokyo is broken clouds with a temperature of 3.82°C and 52% humidity.
 ```
