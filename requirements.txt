@@ -1,0 +1,14 @@
+mcp
+google-generativeai
+python-dotenv
+requests
+amadeus
+pinecone
+fastapi
+uvicorn
+sse-starlette
+pandas
+langchain
+langchain-google-genai
+langchain-community
+streamlit
