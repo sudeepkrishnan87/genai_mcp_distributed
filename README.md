@@ -54,5 +54,20 @@ You (type 'quit' to exit): What is the weather in Tokyo?
 [⚙️ MCP Server]: Running get_weather...
   > Result: Weather in Tokyo: broken clouds, Temperature: 3.82°C, Humidity: 52%
 
+
 [💬 Gemini Final Answer]: The weather in Tokyo is broken clouds with a temperature of 3.82°C and 52% humidity.
+
+You (type 'quit' to exit): Find me flights from PAR to LON for 2024-12-25
+
+[Sending to Gemini]: Find me flights from PAR to LON for 2024-12-25
+
+[⚡ Gemini Decision]: I need to use a tool!
+  > Tool Name: search_flights
+  > Arguments: {'origin': 'PAR', 'destination': 'LON', 'departure_date': '2024-12-25'}
+
+[⚙️ MCP Server]: Running search_flights...
+  > Result: Flight: BA304 -> BA305, Price: 156.90 EUR
+  > Result: Flight: AF123, Price: 145.50 EUR
+
+[💬 Gemini Final Answer]: I found a few flights for you from Paris (PAR) to London (LON) on December 25th, 2024. The best options are a British Airways flight for €156.90 and an Air France flight for €145.50.
 ```
